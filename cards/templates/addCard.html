@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CardCollector</title> <!card app name>
+  <link href="{% static "addCard.css" %}" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+</head>
+
+<body>
+   <a href= "{% url "index" %}"> <h1 class = "open">Card   
+  Collector</h1></a>
+    <div style = "position:absolute; left:500px; top:0px">
+      <button class="button-1" role="button">Store Cards    
+      </button>
+      <button class = "button-2" role = "button">Create a 
+      deck</button>
+      <a href="{% url 'logout' %}"><button class = "button-3" role = "button"> Log 
+      Out</button></a>
+    <script src="script.js"></script>
+   <h2>
+    <div class="card-container"> 
+      <p class="bigt">Add Cards to Your Collection
+        <form action="{% url 'addCard' %}" method="post">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Submit">
+  </form>
+      </p>
+  {% for var in messages %}
+    <p class="{{var.level_tag}}" id="success">{{ var }}</p>
+  {% endfor %}
+    </div>
+  </h2>
+<script src="script.js"></script>
+</body>
+
+</html>

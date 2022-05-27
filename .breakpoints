@@ -1,0 +1,18 @@
+{
+  "files": {
+    "cards/views.py": [
+      {
+        "id": "15a69b30-56d9-417a-97bc-f04eb0758103",
+        "line": 8,
+        "version": 1449,
+        "index": 304
+      },
+      {
+        "id": "520744e5-0e25-4253-b08a-a53c7ba61450",
+        "line": 34,
+        "version": 1449,
+        "index": 1212
+      }
+    ]
+  }
+}

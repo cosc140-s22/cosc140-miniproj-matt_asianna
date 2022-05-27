@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.open{
+  text-align: left;
+  color:white;
+  font-size: 60px;
+  background-image: url('https://lh3.googleusercontent.com/4hKddyl89Z8TtewjPdBjJ0l9erMa4zmqpKX6vruo2K0MLeqR0nmGtUs6FVYIzcIqT4u5pWg=s152');
+  background-size: 11%;
+  position:relative;
+  margin-top:-10px;
+}
+
+
+button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin:1em;
+}
+
+button:hover
+button:active {
+  background-color:initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+button:active {
+  opacity:.5;
+}
+form{
+  width: 1000px;
+  height: 90px;
+  border-radius: 8px;
+  display: inline;
+  flex-direction: row;
+  align-items: center;
+}
+
+body{
+  background-color: black;
+  background-image: 
+    url('https://media.giphy.com/media/dQz78Klfw1O41tBXEP/giphy.gif'),
+    url('https://media.giphy.com/media/7J26p5qMw6egKxLnNq/giphy.gif'),
+    url('https://media.giphy.com/media/7NOZThmc5NOrKSwkxl/giphy.gif'),
+    url('https://media.giphy.com/media/4acjXorPt0xl4yaDcM/giphy.gif');
+  background-size: 25%;
+  background-position:
+    top right, /* this positions the first image */
+    bottom left, /* this positions the second image */
+    top left,/*this position is third image*/
+    bottom right;
+  background-repeat:
+    no-repeat; /* this applies to both images */
+  
+}
+
+.card-container {
+font-size:40px;
+  border: 5px solid white;
+  margin-top: 125px;
+  background-image: url('https://images.alphacoders.com/265/265693.png');
+  background-size:125%;
+  height: 400px;
+  width:600px;
+  text-align:center;
+  color: white;
+  margin-left: -35px;
+}

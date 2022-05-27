@@ -1,0 +1,41 @@
+
+.open{
+  text-align: left;
+  color:white;
+  font-size: 60px;
+  background-image: url('https://lh3.googleusercontent.com/4hKddyl89Z8TtewjPdBjJ0l9erMa4zmqpKX6vruo2K0MLeqR0nmGtUs6FVYIzcIqT4u5pWg=s152');
+  background-size: 11%;
+  position:relative;
+  margin-top:-10px;
+}
+
+button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  margin:1em;
+}
+
+button:hover
+button:active {
+  background-color:initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+button:active {
+  opacity:.5;
+}

@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CardCollector</title>
+  <link href= "{% static "style.css" %}" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+  
+</head>
+  
+<body>
+  <a href= "{% url "index" %}"> <h1 class = "open">Card   
+  Collector </h1></a>
+    <div style = "position:absolute; left:500px; top:0px">
+      <a href="{% url "addCard"%}"><button class="button-1" role="button">Store Cards    
+      </button></a>
+      <button class = "button-2" role = "button">Create a 
+      deck</button> 
+      <a href="{% url 'logout' %}"><button class = "button-3" role = "button"> Log 
+      Out</button></a>
+      <form id="form" action = "{% url 'index' %}" method='get'>
+        {% csrf_token %}
+        {{form}} 
+        <input type="submit" id="query" name="q" 
+        placeholder="Submit">
+      </form>
+    <script src="script.js"></script>
+    </div>
+</body> 
+  <nav>
+    <div style="text-align:center;">
+      <!This is for the text alignment>
+    </div>  
+  </nav> 
+  <form method="get" action="{% url 'index' %}">
+  
+
+<div class='cardGrid'>
+  {% for c in cards %}
+  <a href="{% url 'index' %}"></a>
+      <div><img class="cardpic" src="https://api.scryfall.com/cards/{{c.scryfallId}}?format=image" alt="{{c.text}}" ></div>
+  {% endfor %}
+</div>
+
+<!This base has the card collection lay out page/>
+</html>
